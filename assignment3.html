@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    .main-circle {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1; /* Ensure the main circle is behind the smaller circles */
+      overflow: hidden;
+      display:flex;
+align-items:center;
+justify-content: center;
+top: 0;
+left: 0;
+    }
+
+    .main-circle img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      animation: rotation 6s infinite linear;
+    }
+
+    .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      position: absolute;
+      cursor: pointer;
+      transition: 0.3s;
+      
+      z-index: 2; /* Ensure the smaller circles are in front */
+    }
+
+    .circle:active {
+      transform: scale(3);
+    }
+
+    .circle1 { background-color: #f6b6d6; top: -300px; right: -20px;}
+    .circle2 { background-color: #f9edc8; top: -150px; right: -300px;}
+    .circle3 { background-color: #331407; top: 150px; right: -300px;}
+    .circle4 { background-color: #683617; top: 300px; right: -20px;}
+    .circle5 { background-color: #91cd85; top: 150px; right: 300px;}
+    .circle6 { background-color: #d30505; top: -150px; right: 300px;}
+
+    @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="main-circle">
+    <img src="assets/cakes.png" alt="Main Image">
+  </div>
+  
+  <div class="container">
+   
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+    <div class="circle circle6"></div>
+  </div>
+
+</body>
+</html>

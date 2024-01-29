@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .color-box {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .color-box img {
+      width: 97%;
+      height: 97%;
+      object-fit: cover;
+      border: 3px solid black;
+    }
+
+    .color-box:hover img {
+      opacity: 0.2;
+    }
+
+    .color-box:hover .overlay {
+      opacity: 0.5;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .overlay p {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #202020;
+    }
+
+    /* Define your 5 colors here */
+    #color1 { background-color: #fe0100; }
+    #color2 { background-color: #be0001; }
+    #color3 { background-color: #800000; }
+    #color4 { background-color: #400000; }
+    #color5 { background-color: #000000; }
+  </style>
+</head>
+<body>
+
+  <div class="color-box" id="color1">
+    <img src="assets/rare_steak.png" alt="Rare">
+    <div class="overlay">
+      <p>Rare</p>
+    </div>
+  </div>
+
+  <div class="color-box" id="color2">
+    <img src="assets/med_rare_steak.png" alt="Medium Rare">
+    <div class="overlay">
+      <p>Medium Rare</p>
+    </div>
+  </div>
+
+  <div class="color-box" id="color3">
+    <img src="assets/medium_steak.png" alt="Medium">
+    <div class="overlay">
+      <p>Medium</p>
+    </div>
+  </div>
+
+  <div class="color-box" id="color4">
+    <img src="assets/med_well_steak.png" alt="Medium Well Done">
+    <div class="overlay">
+      <p>Medium Well Done</p>
+    </div>
+  </div>
+
+  <div class="color-box" id="color5">
+    <img src="assets/welldone_steak.png" alt="Well Done">
+    <div class="overlay">
+      <p>Well Done</p>
+    </div>
+  </div>
+
+</body>
+</html>

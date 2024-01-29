@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbles</title>
+    <style>
+        @font-face {
+			font-family: "Editorial Old";
+			src: url('PPEditorialOld-Regular.otf');
+		}
+ .container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			justify-content: center;
+            padding-left:30px;
+		}
+.text {
+    color: rgb(0, 0, 0);
+    font-family: "Editorial Old";
+    font-size: 45px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes move {
+    0% { transform: translate(0vw,  -10vh); }
+    25%   { transform: translate(5vw, 25vh); }    
+    50%   { transform: translate(0vw, 50vh); }    
+    75%   { transform: translate(5vw, 75vh); }    
+    100%   { transform: translate(0vw, 100vh); }  
+}
+#color1 { color: #f9eaac; }
+    #color2 { color: #16ca43; }
+    #color3 { color: #f0cf26; }
+    #color4 { color: #301c04; }
+    #color5 { color: #dd1616; }
+    #color6 { color: #f36565; }
+    </style>
+</head>
+<body style="background: linear-gradient(white, rgb(255, 255, 255), rgb(255, 255, 255)); height:100vh;">
+<div class="container">
+    <div class="text" id="color5" style="animation-delay: -2.5s;">caprese</div>
+    <div class="text" id="color2" style="animation-delay: -0.6s;">salad</div>
+    <div class="text" id="color3" style="animation-delay: -0.4s;">cheese</div>
+    <div class="text" id="color4" style="animation-delay: -0s;">coffee</div>
+    <div class="text" id="color5" style="animation-delay: -2.1s;">caprese</div>
+    <div class="text" id="color1" style="animation-delay: -3.1s;">soup</div>
+    <div class="text" id="color2" style="animation-delay: -1.9s;">salad</div>
+    <div class="text" id="color6" style="animation-delay: -0.1s;">tart</div>
+    <div class="text" id="color3" style="animation-delay: -2.2s;">cheese</div>
+    <div class="text" id="color4" style="animation-delay: -1.2s;">coffee</div>
+    <div class="text" id="color5" style="animation-delay: -0.4s;">caprese</div>
+    <div class="text" id="color1" style="animation-delay: -1.9s;">soup</div>
+</div>
+</body>
+</html>
