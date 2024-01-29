@@ -9,8 +9,10 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      width: 200vh;
       margin: 0;
       background-color: #ffffff;
+      overflow:scroll;
     }
 
     .container {
@@ -26,10 +28,10 @@
       z-index: 1; /* Ensure the main circle is behind the smaller circles */
       overflow: hidden;
       display:flex;
-align-items:center;
-justify-content: center;
-top: 0;
-left: 0;
+        align-items:center;
+        justify-content: center;
+        top: 0;
+        left: 0;
     }
 
     .main-circle img {
@@ -46,7 +48,7 @@ left: 0;
       position: absolute;
       cursor: pointer;
       transition: 0.3s;
-      
+
       z-index: 2; /* Ensure the smaller circles are in front */
     }
 
@@ -77,9 +79,9 @@ left: 0;
   <div class="main-circle">
     <img src="assets/cakes.png" alt="Main Image">
   </div>
-  
+
   <div class="container">
-   
+
     <div class="circle circle1"></div>
     <div class="circle circle2"></div>
     <div class="circle circle3"></div>
