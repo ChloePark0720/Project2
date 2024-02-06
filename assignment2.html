@@ -4,14 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      display: flex;
+
+.text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color: #000000;
+            place-items: center;
+           
+            }
+            
+    body  {
+      
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       background-color: #ffffff;
     }
+
+  
 
     .color-box {
       width: 200px;
@@ -21,6 +37,7 @@
       overflow: hidden;
       cursor: pointer;
       transition: 0.3s;
+      display: flex;
     }
 
     .color-box img {
@@ -28,6 +45,7 @@
       height: 97%;
       object-fit: cover;
       border: 3px solid black;
+      display: flex;
     }
 
     .color-box:hover img {
@@ -50,6 +68,7 @@
       align-items: center;
       opacity: 0;
       transition: 0.3s;
+      
     }
 
     .overlay p {
@@ -68,6 +87,8 @@
   </style>
 </head>
 <body>
+  <div class="text">
+    <h1>Choose Your Meat</h1></div>
 
   <div class="color-box" id="color1">
     <img src="assets/11.jpeg" alt="Rare">
@@ -103,6 +124,7 @@
       <p>Well Done</p>
     </div>
   </div>
+  
 
 </body>
 </html>
