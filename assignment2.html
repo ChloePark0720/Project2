@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    .text {
+      margin: 0;
+      font-size: 40px;
+      color: #000000;
 
-.text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 25vh;
-            margin: 0;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 40px;
-            color: #000000;
-            place-items: center;
-           
-            }
-            
-    body  {
-      
+    }
+
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       background-color: #ffffff;
     }
 
-  
+
 
     .color-box {
       width: 200px;
@@ -68,7 +65,7 @@
       align-items: center;
       opacity: 0;
       transition: 0.3s;
-      
+
     }
 
     .overlay p {
@@ -78,53 +75,82 @@
       color: #202020;
     }
 
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     /* Define your 5 colors here */
-    #color1 { background-color: #fe0100; }
-    #color2 { background-color: #be0001; }
-    #color3 { background-color: #800000; }
-    #color4 { background-color: #400000; }
-    #color5 { background-color: #000000; }
+    #color1 {
+      background-color: #fe0100;
+    }
+
+    #color2 {
+      background-color: #be0001;
+    }
+
+    #color3 {
+      background-color: #800000;
+    }
+
+    #color4 {
+      background-color: #400000;
+    }
+
+    #color5 {
+      background-color: #000000;
+    }
   </style>
 </head>
+
 <body>
   <div class="text">
-    <h1>Choose Your <span style="color: #b30101de">Meat</span></h1></div>
-
-  <div class="color-box" id="color1">
-    <img src="assets/11.jpeg" alt="Rare">
-    <div class="overlay">
-      <p>Rare</p>
-    </div>
+    <h1>Choose Your <span style="color: #b30101de">Meat</span></h1>
   </div>
 
-  <div class="color-box" id="color2">
-    <img src="assets/22.jpeg" alt="Medium Rare">
-    <div class="overlay">
-      <p>Medium Rare</p>
-    </div>
-  </div>
+  <div class="container">
 
-  <div class="color-box" id="color3">
-    <img src="assets/33.jpeg" alt="Medium">
-    <div class="overlay">
-      <p>Medium</p>
-    </div>
-  </div>
 
-  <div class="color-box" id="color4">
-    <img src="assets/44.jpeg" alt="Medium Well Done">
-    <div class="overlay">
-      <p>Medium Well Done</p>
+    <div class="color-box" id="color1">
+      <img src="assets/11.jpeg" alt="Rare">
+      <div class="overlay">
+        <p>Rare</p>
+      </div>
     </div>
-  </div>
 
-  <div class="color-box" id="color5">
-    <img src="assets/55.jpeg" alt="Well Done">
-    <div class="overlay">
-      <p>Well Done</p>
+    <div class="color-box" id="color2">
+      <img src="assets/22.jpeg" alt="Medium Rare">
+      <div class="overlay">
+        <p>Medium Rare</p>
+      </div>
     </div>
+
+    <div class="color-box" id="color3">
+      <img src="assets/33.jpeg" alt="Medium">
+      <div class="overlay">
+        <p>Medium</p>
+      </div>
+    </div>
+
+    <div class="color-box" id="color4">
+      <img src="assets/44.jpeg" alt="Medium Well Done">
+      <div class="overlay">
+        <p>Medium Well Done</p>
+      </div>
+    </div>
+
+    <div class="color-box" id="color5">
+      <img src="assets/55.jpeg" alt="Well Done">
+      <div class="overlay">
+        <p>Well Done</p>
+      </div>
+    </div>
+
+
   </div>
-  
 
 </body>
+
 </html>
