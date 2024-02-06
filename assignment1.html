@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page1</title>
     <style>
+
         @font-face {
 			font-family: "Editorial Old";
 			src: url('PPEditorialOld-Regular.otf');
@@ -35,9 +36,28 @@
     #color4 { color: #301c04; }
     #color5 { color: #dd1616; }
     #color6 { color: #f36565; }
+
+    .popup {
+        position: absolute; 
+		  left: 25%; 
+          display: inline-block;
+          cursor: pointer;
+        opacity: 0;
+        font-size: 50px;
+        text-align: center;
+        
+        }
+
+    @media all and (max-width: 1200px) {
+        body {background-color: #00000098;}
+        .popup {opacity: 1}
+    }
+
     </style>
 </head>
-<body style="background: linear-gradient(white, rgb(255, 255, 255), rgb(255, 255, 255)); height:100vh;">
+<body>
+    <h1 class="popup"> Do not fold !!! </h1>
+   <span>
 <div class="container">
     <div class="text" id="color5" style="animation-delay: -2.5s;">caprese</div>
     <div class="text" id="color2" style="animation-delay: -0.6s;">salad</div>
@@ -51,6 +71,7 @@
     <div class="text" id="color4" style="animation-delay: -1.2s;">coffee</div>
     <div class="text" id="color5" style="animation-delay: -0.4s;">caprese</div>
     <div class="text" id="color1" style="animation-delay: -1.9s;">soup</div>
+</span>
 </div>
 </body>
 </html>
